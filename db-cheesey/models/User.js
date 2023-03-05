@@ -6,7 +6,4 @@ const User = sequelize.define('User',{
     email: Sequelize.STRING
 });
 
-
-
-
 module.exports = {User} ;
