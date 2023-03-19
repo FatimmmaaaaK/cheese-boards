@@ -14,7 +14,6 @@ const { Sequelize } = require('sequelize');
         });
 
         test('can create a User', async () => {
-            // TODO - write test
             const newUser = await User.create({
                 name: 'Fatima',
                 email: 'fatimasnewemail@gmail.com'
@@ -54,6 +53,7 @@ const { Sequelize } = require('sequelize');
                 email: 'fatoumatasnewemail@gmail.com'
             });
 
+            // we would check the updateUser here
             expect(newUser.name).toEqual('Fatoumata');
             expect(newUser.email).toEqual("fatoumatasnewemail@gmail.com");
         });
